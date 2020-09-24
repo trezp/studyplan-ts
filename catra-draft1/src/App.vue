@@ -1,14 +1,20 @@
 <template>
-  <HelloCatra msg="Hello from Catra"/>
+  <Header/>
+  <Main/>
+  <Footer/>
 </template>
 
 <script>
-import HelloCatra from './components/HelloCatra.vue'
+import Header from './layout/Header.vue';
+import Footer from './layout/Footer.vue'
+import Main from './layout/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloCatra
+    Header,
+    Main,
+    Footer
   }
 }
 </script>
