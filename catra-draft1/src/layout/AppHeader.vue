@@ -1,8 +1,8 @@
 <template>
-    <div class="header-container">
-        <h1>Header</h1>
+    <header class="header-container">
+        <router-link to="/"><h1>Header</h1></router-link>
         <NavBar></NavBar>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -16,7 +16,7 @@
 </script>
 
 <style lang="scss" scoped>
-    div {
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;

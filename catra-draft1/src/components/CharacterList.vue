@@ -1,6 +1,8 @@
 <template>
-  <ul v-for="character in characters" :key="character.id">
-    <li>
+  <ul>
+    <li class="active"
+        v-for="character in characters" 
+        :key="character.id">
       <p>Name: {{character.name}}</p>
       <p>Power: {{character.power}}</p>
     </li>
@@ -8,7 +10,6 @@
 </template>
 
 <script> 
-//import { mapState } from 'vuex';
 
 export default {
   name: 'CharacterList',
@@ -35,6 +36,5 @@ export default {
 </script>
 
 <style scoped>
-
 
 </style>

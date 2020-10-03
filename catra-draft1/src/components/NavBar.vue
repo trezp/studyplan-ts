@@ -1,8 +1,8 @@
 <template>
     <ul class="catra-nav">
-        <li><a href="#">She-Ra</a></li>
-        <li><a href="#">Bow</a></li>
-        <li><a href="#">Glimmer</a></li>
+        <li><a href="#">Super Heroes</a></li>
+        <li><a href="#">GradeBook</a></li>
+        <li><a href="#">OtherStuff</a></li>
     </ul>
 </template>
 
@@ -10,12 +10,10 @@
 
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
     ul {
         display: flex;
         justify-content: space-between;
-        list-style-type: none;
-        padding-left: 0;
         width: 50%;
 
         li {

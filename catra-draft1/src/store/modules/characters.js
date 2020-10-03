@@ -2,7 +2,6 @@ import axios from 'axios';
 
 // initial state
 const state = () => ({
-  blah: "Hello",
   all: []
 });
 

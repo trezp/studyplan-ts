@@ -1,24 +1,41 @@
 <template>
-  <Header/>
-  <Main/>
-  <Footer/>
+  <div class="app-container">
+    <AppHeader/>
+    <main class="content">
+      <router-view/>
+    </main>
+    <AppFooter/>
+  </div>
 </template>
 
 <script>
-import Header from './layout/Header.vue';
-import Footer from './layout/Footer.vue'
-import Main from './layout/Main.vue';
+import AppHeader from './layout/AppHeader.vue';
+import AppFooter from './layout/AppFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Main,
-    Footer
+    AppHeader,
+    AppFooter
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+  ul {
+    list-style-type: none;
+    padding-left: 0; 
+  }
+  .app-container {
+    width: 80%; 
+    margin: auto;
+  }
 
+  /* TEMP Stuff to made footer stick to bottom  */
+  .content {
+    min-height: calc(80vh - 70px);
+  }
+  .footer {
+    height: 100px;
+  }
 </style>
