@@ -1,12 +1,12 @@
 <template>
-    <HelloCatra msg="Hello from Catra!"/>
+    <CharacterList/>
 </template>
 
 <script>
-    import HelloCatra from '../components/HelloCatra.vue';
+    import CharacterList from '../components/CharacterList.vue';
 
     export default {
-        components: { HelloCatra },
+        components: { CharacterList },
     }
 </script>
 
