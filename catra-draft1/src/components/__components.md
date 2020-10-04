@@ -1,1 +1,0 @@
-This folder will contain UI components, ie smaller components that make up the larger layout components found in the `views` folder. 

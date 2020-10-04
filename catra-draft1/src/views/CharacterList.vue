@@ -1,18 +1,21 @@
 <template>
+  <router-link to="/">Back</router-link>
   <ul>
     <li v-for="character in characters" :key="character.id">
-      <router-link :to="`/characters/${character.id}`">{{character.name}}</router-link>
+      <!-- <router-link :to="`/characters/${character.id}`">{{character.name}}</router-link> -->
+      <Character :character="character"/>
     </li>
   </ul>
 </template>
 
 <script> 
+import Character from "../components/Character.vue";
 
 export default {
   name: 'CharacterList',
-  props: {
-    msg: String 
-  }, 
+  components: {
+    Character
+  },
   data(){
     return {
       characters: []
