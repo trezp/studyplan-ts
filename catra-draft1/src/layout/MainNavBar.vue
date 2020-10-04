@@ -1,8 +1,7 @@
 <template>
     <ul class="catra-nav">
-        <li><a href="#">Super Heroes</a></li>
-        <li><a href="#">GradeBook</a></li>
-        <li><a href="#">OtherStuff</a></li>
+        <li><router-link to="/characters">Super Heroes!</router-link></li>
+        <li><router-link to="/gradebook">Gradebook</router-link></li>
     </ul>
 </template>
 

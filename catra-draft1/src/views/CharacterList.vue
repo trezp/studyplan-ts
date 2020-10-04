@@ -1,10 +1,7 @@
 <template>
   <ul>
-    <li class="active"
-        v-for="character in characters" 
-        :key="character.id">
-      <p>Name: {{character.name}}</p>
-      <p>Power: {{character.power}}</p>
+    <li v-for="character in characters" :key="character.id">
+      <router-link :to="`/characters/${character.id}`">{{character.name}}</router-link>
     </li>
   </ul>
 </template>

@@ -1,16 +1,16 @@
 <template>
     <header class="header-container">
         <router-link to="/"><h1>Header</h1></router-link>
-        <NavBar></NavBar>
+        <MainNavBar></MainNavBar>
     </header>
 </template>
 
 <script>
-    import NavBar from '../layout/NavBar.vue';
+    import MainNavBar from '../layout/MainNavBar.vue';
 
     export default {
         components: { 
-            NavBar
+            MainNavBar
          },
     }
 </script>
