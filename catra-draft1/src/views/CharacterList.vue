@@ -6,15 +6,18 @@
     </li>
   </ul>
   <Character :character="activeCharacter"/>
+  <HelloWorld msg="Dear god please work"/>
 </template>
 
 <script> 
 import Character from "../components/Character.vue";
+import HelloWorld from "../components/HelloWorld.vue";
 
 export default {
   name: 'CharacterList',
   components: {
-    Character
+    Character,
+    HelloWorld
   },
   data(){
     return {
