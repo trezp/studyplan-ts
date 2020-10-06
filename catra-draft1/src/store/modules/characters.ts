@@ -10,7 +10,7 @@ const getters = {}
 
 // actions
 const actions = {
-    async getCharacters({commit}) {
+    async getCharacters({commit}:any) {
         const result = await axios.get('fakeapi.json');
         commit('setCharacters', result.data);
     }
@@ -18,7 +18,7 @@ const actions = {
 
 // mutations
 const mutations = {
-  setCharacters (state, data) {
+  setCharacters (state:any, data:object) {
     state.all = data;
   }
 }
