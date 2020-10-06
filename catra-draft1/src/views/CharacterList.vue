@@ -2,10 +2,10 @@
   <router-link to="/">Back</router-link>
   <ul>
     <li v-for="character in characters" :key="character.id">
-      <!-- <router-link :to="`/characters/${character.id}`">{{character.name}}</router-link> -->
-      <Character :character="character"/>
+      <button type="button" @click="makeActive(character)">{{character.name}}</button>
     </li>
   </ul>
+  <Character :character="activeCharacter"/>
 </template>
 
 <script> 
@@ -18,11 +18,17 @@ export default {
   },
   data(){
     return {
-      characters: []
+      characters: [],
+      activeCharacter: "",
+      active: false
     }
   },
   computed: {
-    
+  },
+  methods: {
+    makeActive(character){
+      this.activeCharacter = character;
+    }
   },
   async mounted(){
     try {

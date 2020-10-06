@@ -4,7 +4,7 @@ import characters from './modules/characters';
 
 export default createStore({
   modules: {
-    characters 
+    characters,
   }
 });
 
