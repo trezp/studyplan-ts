@@ -2,7 +2,6 @@
     <ul class="catra-nav">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/gradebook">Gradebook</router-link></li>
-        <li><router-link to="/characters">Super Heroes!</router-link></li>
     </ul>
 </template>
 

@@ -15,13 +15,15 @@ npm run serve
 npm run build
 ```
 
+### Runs tests 
+```
+npm run test:unit
+```
+
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## File structure
 
@@ -45,3 +47,7 @@ Smaller components that are the building blocks of various `/layouts`, such as h
 
 ### `/configs`
 TBD
+
+
+## Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

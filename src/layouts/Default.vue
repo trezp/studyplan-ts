@@ -1,9 +1,9 @@
 <template>
-   <AppHeader/>
-        <main class="content">
-            <slot></slot>
-        </main>
-   <AppFooter/>
+    <AppHeader/>
+    <main class="content">
+        <slot></slot>
+    </main>
+    <AppFooter/>
 </template>
 
 <script>

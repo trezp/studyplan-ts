@@ -1,7 +1,6 @@
 <template>
     <div>
         <HelloWorld msg="Hello from Ohm Assessments"/>
-        <p><router-link to="/characters">Superheroes</router-link></p>
         <p><router-link to="/gradebook">Gradebook</router-link></p>
     </div>
 </template>

@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
 
-import characters from './modules/characters';
+import example from './modules/example';
 
 export default createStore({
   modules: {
-    characters,
+    example,
   }
 });
 
