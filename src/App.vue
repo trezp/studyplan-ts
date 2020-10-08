@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss";
   ul {
     list-style-type: none;
     padding-left: 0; 
