@@ -19,7 +19,7 @@ const routes = [
         path: "/gradebook",
         name: "Gradebook", 
         component: Gradebook
-    }
+    },
 ];
 
 const router = createRouter({

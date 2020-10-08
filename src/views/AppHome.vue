@@ -1,14 +1,18 @@
 <template>
     <div>
-        <h1>Welcome to Catra!</h1>
-        <h2><router-link to="/characters">See superheroes</router-link></h2>
-        <h2><router-link to="/gradebook">See gradebook</router-link></h2>
+        <HelloWorld msg="Hello from Ohm Assessments"/>
+        <p><router-link to="/characters">Superheroes</router-link></p>
+        <p><router-link to="/gradebook">Gradebook</router-link></p>
     </div>
 </template>
 
 <script>
+    import HelloWorld from "../components/HelloWorld.vue";
+
     export default {
-        
+        components: {
+            HelloWorld
+        }
     }
 </script>
 

@@ -1,28 +1,27 @@
 <template>
   <router-link to="/">Back</router-link>
-  <ul>
+  <ul class="character-list">
     <li v-for="character in characters" :key="character.id">
-      <button type="button" @click="makeActive(character)">{{character.name}}</button>
+      <button type="button" 
+        class="button" 
+        @click="makeActive(character)">{{character.name}}</button>
     </li>
   </ul>
   <Character :character="activeCharacter"/>
-  <HelloWorld msg="Dear god please work"/>
 </template>
 
 <script> 
 import Character from "../components/Character.vue";
-import HelloWorld from "../components/HelloWorld.vue";
 
 export default {
   name: 'CharacterList',
   components: {
-    Character,
-    HelloWorld
+    Character
   },
   data(){
     return {
       characters: [],
-      activeCharacter: "",
+      activeCharacter: {},
       active: false
     }
   },
@@ -37,6 +36,7 @@ export default {
     try {
       await this.$store.dispatch('characters/getCharacters');
       this.characters = this.$store.state.characters.all;
+      this.activeCharacter = this.characters[0];
     } catch(err){
       console.log(err);
     }
@@ -45,5 +45,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .character-list {
+    display: flex;
+  }
 </style>
