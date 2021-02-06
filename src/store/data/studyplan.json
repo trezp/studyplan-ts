@@ -1,0 +1,19 @@
+{
+    "tiles": [
+      {
+        "tileId": 1,
+        "title": "This is a tile",
+        "status": "0/1"
+      },
+      {
+        "tileId": 2,
+        "title": "This is a tile",
+        "status": "0/1"
+      },
+      {
+        "tileId": 1,
+        "title": "This is a tile",
+        "status": "0/1"
+      }
+    ]
+  }

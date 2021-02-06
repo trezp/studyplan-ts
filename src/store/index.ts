@@ -1,9 +1,12 @@
 import { createStore } from 'vuex';
 
-import example from './modules/example';
+import studyplan, { StudyPlanInterface } from './modules/studyplan';
 
+export interface StateInterface {
+  studyplan: StudyPlanInterface;
+}
 export default createStore({
   modules: {
-    example,
+    studyplan,
   },
 });

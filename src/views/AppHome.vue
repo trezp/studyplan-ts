@@ -1,16 +1,21 @@
 <template>
   <div>
-    <HelloWorld msg="Hello from Ohm Assessments" />
-    <p><router-link to="/gradebook">Gradebook</router-link></p>
+    <TileList :tiles="tiles" />
   </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue';
+import { mapGetters } from 'vuex';
+import TileList from '../components/TileList.vue';
 
 export default {
   components: {
-    HelloWorld,
+    TileList,
+  },
+  computed: {
+    ...mapGetters({
+      tiles: 'studyplan/tiles',
+    }),
   },
 };
 </script>
