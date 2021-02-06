@@ -1,7 +1,6 @@
 <template>
   <div>
     <TileList />
-    <p><router-link to="/gradebook">Gradebook</router-link></p>
   </div>
 </template>
 

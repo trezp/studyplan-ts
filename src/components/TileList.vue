@@ -1,6 +1,6 @@
 <template>
-  <div v-for="tile in tiles" :key="tile.tileId">
-    <Tile :title="tile.title"/>
+  <div class="tile-list">
+    <Tile :title="tile.title" v-for="tile in tiles" :key="tile.tileId"/>
   </div>
 </template>
 
@@ -35,4 +35,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.tile-list {
+    display: flex;
+    justify-content: space-between;
+}
+</style>
