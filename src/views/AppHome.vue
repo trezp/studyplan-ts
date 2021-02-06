@@ -1,16 +1,16 @@
 <template>
   <div>
-    <HelloWorld msg="Hello from Ohm Assessments" />
+    <TileList />
     <p><router-link to="/gradebook">Gradebook</router-link></p>
   </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue';
+import TileList from '../components/TileList.vue';
 
 export default {
   components: {
-    HelloWorld,
+    TileList,
   },
 };
 </script>

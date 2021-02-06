@@ -1,6 +1,6 @@
 <template>
   <header class="header-container">
-    <router-link to="/" exact><h1>OHM Assessments</h1></router-link>
+    <h1>What Is Marketing?</h1>
     <AppNavBar></AppNavBar>
   </header>
 </template>
